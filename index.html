@@ -4,135 +4,390 @@
     <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    <link href="css/progress.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|BenchNine|Montserrat|Montserrat+Alternates" rel="stylesheet">
+    <script src="https://use.fontawesome.com/b212b1ef34.js"></script>
 </head>
 
 <body>
-	<div class="container-fluid">
+
     
-	  <div class="row main text-center myflex">
-	  	  <div class="category"> Hi, I'm Yulia </div>
-		  <div class= "subcategory">I analyze big data and build web dashboards during the day - and learn web development at night </div>
+	  <div class="main text-center">
+	  	  <div class="myname"> Hi, I'm Yulia </div>
+		  <div class= "mytext">I analyze big data and build web dashboards during the day - and learn web development at night </div>
+          <div class='unicorn_container'>
+          <img src="images/unicorn.gif" class='unicorn'>
+		  <div class= "mytext-small"> (yes, and I love unicorns) </div>
+          </div>
 	  </div>
 
       <div class="row skills text-center">
-		<div class="category">Technical stuff</div>
-		  <div class="subcategory">Frontend</div>
-			<div class="progress_container col-sm-2 col-xs-4 text-center">
-				<div class="progress-radial progress-60">
-			  		<div class="overlay">HTML</div>
-				</div>		
-  		    </div>
+          <div class="category">Technical stuff</div>
+          <div class="subcategory col-xs-12">Frontend</div>
+          <div class="progress_container col-sm-2 col-xs-4 col-sm-offset-1 text-center">
+           
+              <svg width="110" height="110">
+              <!-- center (x and y) and radius  -->
+                <!-- M50,50 - start path in the center of the circle -->
+                <!-- L50,5 - draw vertical line from center of circle to top of element (5px from the top) -->
+                <!-- A50,50 - draw arc from current location with radius = circle radius  -->
+                <!-- 1 0 1 z - curvature, direction, and terminal of the arc  -->
+                <!--angle(in Radians) = (angleInDegrees-90) * PI / 180.0;
+                    96,83 - where the arc should end
+                        x = 55 + 50 * cos(angle)
+                        y = 55 + 50 * sin(angle)  
+                87,17 = 40 deg
+                98,30 = 40 deg
+                105,55 = 90 deg
+                98,80 = 120 deg
+                38,102 = 200 deg
+                8,72 = 250 deg
+                12,30 = 250 deg
+
+                -->
+                  <path d="M55,55 L55,5 A50,50 1 1 1 8,72 z"></path>
+                  <circle cx="55" cy="55" r="30"></circle>
+                  <text x="50%" y="54.5%" text-anchor="middle">HTML</text>
+                </svg>
+            </div>
+
+            <div class="progress_container col-sm-2 col-xs-4 text-center">
+                 <svg width="110" height="110">
+                      <path d="M55,55 L55,5 A50,50 1 1 1 38,102 z"></path>
+                      <circle cx="55" cy="55" r="30"></circle>
+                      <text x="50%" y="54.5%" text-anchor="middle">CSS</text>
+                </svg>
+            </div>
+
+            <div class="progress_container col-sm-2 col-xs-4 text-center">
+                <svg width="110" height="110">
+                      <path d="M55,55 L55,5 A50,50 1 0 1 98,30 z"></path>
+                      <circle cx="55" cy="55" r="30"></circle>
+                      <text x="50%" y="54.5%" text-anchor="middle">JS</text>
+                </svg>
+            </div>
+
+            <div class="progress_container col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-2 text-center">
+               <svg width="110" height="110">
+                      <path d="M55,55 L55,5 A50,50 1 0 1 98,80 z"></path>
+                      <circle cx="55" cy="55" r="30"></circle>
+                      <text x="50%" y="54.5%" text-anchor="middle">SASS</text>
+              </svg>
+           </div>
+
+            <div class="progress_container col-sm-2 col-xs-4 text-center">
+              <svg width="110" height="110">
+                      <path d="M55,55 L55,5 A50,50 1 1 1 12,30 z"></path>
+                      <circle cx="55" cy="55" r="30"></circle>
+                      <text x="50%" y="54.5%" text-anchor="middle">B.</text>
+              </svg>
+           </div>
+              <div class="subcategory col-xs-12 text-center">
+                  Backend / Data
+              </div>
+              
+              <div class="progress_container col-sm-2 col-xs-4 text-center pagination-centered">
+                    <svg width="110" height="110">
+                      <path d="M55,55 L55,5 A50,50 1 1 1 12,30 z"></path>
+                          <circle cx="55" cy="55" r="30"></circle>
+                          <text x="50%" y="54.5%" text-anchor="middle">Hive</text>
+                  </svg>
+              </div>
+          
 
     		<div class="progress_container col-sm-2 col-xs-4 text-center">
-				<div class="progress-radial progress-50">
-			  		<div class="overlay">CSS</div>
-  		       </div>
-    	   </div>
- 
-    		<div class="progress_container col-sm-2 col-xs-4 text-center">
-				<div class="progress-radial progress-30">
-			  		<div class="overlay">JS</div>
-  		       </div>
-    	   </div>
- 
-    		<div class="progress_container col-sm-2 col-xs-4 text-center">
-				<div class="progress-radial progress-30">
-			  		<div class="overlay">SASS</div>
-  		       </div>
-    	   </div>
- 
-    		<div class="progress_container col-sm-2 col-xs-4 text-center">
-				<div class="progress-radial progress-60">
-			  		<div class="overlay">B.</div>
-  		       </div>
-    	   </div>
-        
-    		<div class="progress_container col-sm-2 col-xs-4 text-center">
-				<div class="progress-radial progress-50">
-			  		<div class="overlay">Git</div>
-  		       </div>
-    	   </div>
-    	 </div>
+	          <svg width="110" height="110">
+                      <path d="M55,55 L55,5 A50,50 1 1 1 5,55 z"></path>
+                      <circle cx="55" cy="55" r="30"></circle>
+                      <text x="50%" y="54.5%" text-anchor="middle">SQL</text>
+              </svg>			
+    	    </div>
       
 
-		  <div class="subcategory text-center">Backend / Data</div>
     		<div class="progress_container col-sm-2 col-xs-4 text-center">
-				<div class="progress-radial progress-70">
-			  		<div class="overlay">SQL</div>
-  		       </div>
+ 	          <svg width="110" height="110">
+                  <path d="M55,55 L55,5 A50,50 1 1 1 8,72 z"></path>
+                      <circle cx="55" cy="55" r="30"></circle>
+                      <text x="50%" y="54.5%" text-anchor="middle">R</text>
+              </svg>			
     	   </div>
       
 
     		<div class="progress_container col-sm-2 col-xs-4 text-center">
-				<div class="progress-radial progress-90">
-			  		<div class="overlay">Hive</div>
-  		       </div>
-    	   </div>
+  	          <svg width="110" height="110">
+                  <path d="M55,55 L55,5 A50,50 1 1 1 8,72 z"></path>
+                      <circle cx="55" cy="55" r="30"></circle>
+                      <text x="50%" y="54.5%" text-anchor="middle">Oozie</text>
+              </svg>			
+   	        </div>
       
 
     		<div class="progress_container col-sm-2 col-xs-4 text-center">
-				<div class="progress-radial progress-70">
-			  		<div class="overlay">Oozie</div>
-  		       </div>
-    	   </div>
+   	          <svg width="110" height="110">
+                      <path d="M55,55 L55,5 A50,50 1 0 1 98,30 z"></path>
+                      <circle cx="55" cy="55" r="30"></circle>
+                      <text x="50%" y="54.5%" text-anchor="middle">Python</text>
+              </svg>			
+     	   </div>
       
 
     		<div class="progress_container col-sm-2 col-xs-4 text-center">
-				<div class="progress-radial progress-60">
-			  		<div class="overlay">R</div>
-  		       </div>
-    	   </div>
-      
-
-    		<div class="progress_container col-sm-2 col-xs-4 text-center">
-				<div class="progress-radial progress-15">
-			  		<div class="overlay">Python</div>
-  		       </div>
-    	   </div>
-      
-
-    		<div class="progress_container col-sm-2 col-xs-4 text-center">
-				<div class="progress-radial progress-10">
-                    <div class="overlay">Perl</div>
-  		       </div>
-    	   </div>
-    	 </div>
+    	          <svg width="110" height="110">
+                      <path d="M55,55 L55,5 A50,50 1 0 1 105,55 z"></path>
+                      <circle cx="55" cy="55" r="30"></circle>
+                      <text x="50%" y="54.5%" text-anchor="middle">Perl</text>
+              </svg>			
+ 	        </div>
+    		
+            <div class="subcategory col-xs-12 text-center">
+              Other
+            </div>
+            
+            <div class='col-xs-12 text-center myflex myelements'>
+            <div class = 'myelem'>c3.js</div>
+            <div class = 'myelem'>d3.js</div>
+            <div class = 'myelem'>git</div>
+            <div class = 'myelem'>vim</div>
+            <div class = 'myelem'>tmux</div>
+            <div class = 'myelem'>sublime text</div>
+            <div class = 'myelem'>command line</div>
+            <div class = 'myelem'>agile work approach</div>
+            <div class = 'myelem'>prototyping (eg balzamiq)</div>
+            <div class = 'myelem'>project and stakeholder management</div>
+            </div>
+      </div>
       
      
 	  </div>
+    
+	  
+      <div class="category work_title text-center">Work &amp; Study</div>
+     
+      <div class ='work_main'>
 
-  	  <div class="row work text-center">
-		<div class="category">Work</div>
-	  </div>
+          <div class='line'></div>
+          
+          <div class="work_flex">
+              <div class='work_container work_container_left'>
+                <div class='work text-center'>
+                    <h4>Reporting Analyst</h4>
+                    <h5>Booking.com</h5>
+                    <ul class='text-left'>
+                        <li>Building custom strategic dashboards for several tracks in the company</li>
+                        <li>Big data analysys and deep dives, 
+                            visualization and communication of results to stakeholders
+                        </li>
+                        <li>Teaching MySQL course and training new employees</li>
+                        <li>Working on introducing common data visualization system within company</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class='line_container'>
+                  <div class='work_circle'>'15</div>
+                  <div class='work_line_left'></div>
+               </div>
+          </div>
 
-	  <div class="row education text-center">
-		<div class="category">Education</div>
-		<div class="university text-center">
-			<h3>University</h3>
-			<div class="col-sm-4 text-center">
-				<h4>Bachelor</h4>
-			</div>
-			<div class="col-sm-4 text-center">
-				<h4>Master</h4>
-			</div>
-			<div class="col-sm-4 text-center">
-				<h4>Grad School</h4>
-			</div>
-		</div>
-		<div class="courses text-center">
-			<h3>Courses</h3>
-		</div>
-	  </div>
+           <div class="work_flex_right">
+                <div class='line_container'>
+                  <div class='work_circle'>'14</div>
+                  <div class='work_line_right'></div>
+                </div>
+              <div class='work_container work_container_right'>
+                <div class='work text-center'>
+                    <h4>Web Analyst</h4>
+                    <h5>Crocs</h5>
+                    <ul class='text-left'>
+                        <li>Data analysis, reporting, and forecasting for e-commerce team</li>
+                        <li>Deep-dives into the web pages performance, research into performance and profitability of traffic sourses, customer behaviour analysis</li>
+                        <li>Refactoring of legacy reports and integration between R and several data sourses</li>
+                    </ul>
+                  </div>
+                </div>
+           </div>
+         
+           <div class="work_flex_left">
+              <div class='work_container work_container_left'>
+                <div class='work text-center'>
+                    <h4>Grad School</h4>
+                    <h5>Rotterdam School of Management</h5>
+                    <ul class='text-left'>
+                        <li>PhD candidate in Operations and Technology Department, Innovations Section</li>
+                        <li>Research in the “Battle of Souls” project targeted at identification and analysis of innovative capabilities of creative firms</li>
+                        <li>Successfully completed the first year evaluation</li>
+                        <li>First year mainly devoted to grad school with courses on statistical programming, statistical methods, and theoretical background of research</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class='line_container'>
+                  <div class='work_circle'>'13</div>
+                  <div class='work_line_left'></div>
+               </div>
+          </div>
 
-	  <div class="row contact text-center">
-		<div class="category">Contact</div>
-	  </div>
+ 
+           <div class="work_flex_right">
+                <div class='line_container'>
+                  <div class='work_circle'>'12</div>
+                  <div class='work_line_right'></div>
+                </div>
+              <div class='work_container work_container_right'>
+                <div class='work text-center'>
+                    <h4>Master Studies</h4>
+                    <h5>University of Amsterdam</h5>
+                    <ul class='text-left'>
+                        <li>Business studies, Marketing track</li>
+                        <li>Completed courses are related to different aspects of marketing and consumer behavious </li>
+                        <li>Master thesis: "The importance of the core team members’ reputation in creative industries”, grade 9.0 from 10
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+           </div>
 
-	</div>
+            <div class="work_flex_left">
+              <div class='work_container work_container_left'>
+                <div class='work text-center'>
+                    <h4>Bachelor Studies</h4>
+                    <h5>Ural State University</h5>
+                    <ul class='text-left'>
+                        <li>International Economics track, Graduated with honors</li>
+                        <li>Completed courses are mainly related to international economics, international trade theories, and mathematical and statistical methods</li>
+                        <li>Bachelor thesis: “The role of the vertical inter-firm linkages in the modern international economy”, grade 5.0 from 5</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class='line_container'>
+                  <div class='work_circle'>'07</div>
+                  <div class='work_line_left'></div>
+               </div>
+          </div>
+
+      </div>
+      
+
+ 
+    <div class="category work_title text-center">Latest Courses</div>
+	
+          <div class="courses_flex">
+                <div class = 'date_container'>
+                    <p>Sep&nbsp&nbsp</p>
+                    <p>'16</p>
+                </div>
+                <div class = 'logo_container'>
+                    <img src="images/coursera1.png" alt="coursera_logo" class='course_logo'>
+                </div>
+                <div class = 'course_container'>
+                    <div class='course_text'>
+                        <a href='https://www.coursera.org/learn/html-css-javascript-for-web-developers' target="_blank">
+                            HTML, CSS, and Javascript for Web Developers
+                        </a>
+                    </div>
+                </div>
+                <div class = 'git_container'>
+                    <button type="button" class="btn btn-xs">
+                    <img src="images/gh.svg" alt="github_logo" class='git_logo'>
+                    <span>see my solution</span>
+                    </button>
+                </div>
+          </div>
+
+	
+    <div class="courses_flex">
+                <div class = 'date_container'>
+                    <p>Oct&nbsp&nbsp</p>
+                    <p>'16</p>
+                </div>
+                <div class = 'logo_container'>
+                   <img src="images/udacity.png" alt="udacity_logo" class='course_logo udacity_logo'>
+                </div>
+                <div class = 'course_container'>
+                    <div class='course_text'>
+                         <a href='' target="_blank">
+                       Object-Oriented Javascript & HTML5 Canvas
+                        </a>
+                    </div>
+                </div>
+                <div class = 'git_container'>
+                     <button type="button" class="btn btn-xs">
+                    <img src="images/gh.svg" alt="github_logo" class='git_logo'>
+                    <span>see my solution</span>
+                    </button>
+                </div>
+          </div>
+
+	
+    <div class="courses_flex">
+                <div class = 'date_container'>
+                    <p>Nov&nbsp&nbsp</p>
+                    <p>'16</p>
+                </div>
+                <div class = 'logo_container'>
+                    <img src="images/lynda.png" alt="lynda_logo" class='course_logo'>
+                </div>
+                <div class = 'course_container'>
+                    <div class='course_text'>
+                         <a href='https://www.lynda.com/CSS-tutorials/CSS-Flexbox-First-Look/116352-2.html' target="_blank">
+                        CSS: Flexbox First Look
+                        </a>
+                    </div>
+                </div>
+                <div class = 'git_container'>
+                      <button type="button" class="btn btn-xs">
+                    <img src="images/gh.svg" alt="github_logo" class='git_logo'>
+                    <span>see my solution</span>
+                    </button>
+                </div>
+          </div>
+
+	
+    <div class="courses_flex">
+                <div class = 'date_container'>
+                    <p>Nov&nbsp&nbsp</p>
+                    <p>'16</p>
+                </div>
+                <div class = 'logo_container'>
+                    <img src="images/lynda.png" alt="lynda_logo" class='course_logo'>
+                </div>
+                <div class = 'course_container'>
+                        <div class='course_text'>
+                    <a href='https://www.lynda.com/CSS-tutorials/CSS-LESS-SASS/107921-2.html' target="_blank">
+                        CSS with LESS and Sass
+                    </a>
+                        </div>
+                </div>
+                <div class = 'git_container'>
+                     <button type="button" class="btn btn-xs">
+                    <img src="images/gh.svg" alt="github_logo" class='git_logo'>
+                    <span>see my solution</span>
+                    </button>
+               </div>
+      </div>
 
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+	<div class="category contacts_title text-center">Contact</div>
+        
+    <div class="contacts_flex">
+       <div class='contact_container'>
+            <div class='contact'>
+                <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+                <a href="mailto:kononch.yulia@gmail.com">kononch.yulia@gmail.com</a>
+            </div>
+        </div>
+        <div class='contact_container'>
+            <div class='contact'>
+                <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
+                    <a href="tel:0031633130602">+31-633130602</a>
+            </div>
+        </div>
+        <div class='contact_container'>
+            <div class='contact'>
+                <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+                      <a href='https://nl.linkedin.com/in/yuliakononchuk' target="_blank">
+                          https://nl.linkedin.com/in/yuliakononchuk</a>
+            </div>
+        </div>
+      </div>
+
+
+
 </body>

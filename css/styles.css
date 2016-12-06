@@ -1,47 +1,499 @@
-.myflex {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-	display: flex;
- 	-ms-flex-align: center;
-	-webkit-align-items: center;
-	-webkit-box-align: center;
-	align-items: center;
-    justify-content: center;
+body {
+  background-color: #2f3439;
+  color: #fffde8;
+  font-family: "Noto Sans", sans-serif;
 }
 
+/* FIRST NAME BLOCK */
+
 .main {
-	height: 300px;
+	height: 100vh;
 	background-color: tomato;
     display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
+	display: flex;
+    justify-content: space-around;
+   -webkit-flex-direction: column;
     flex-direction: column;
 }
 
 .myname {
-    width: 100%;
-	font-size: 100px;
+	margin-top: 70px;
+    font-size: 70px;
+	font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .mytext {
-	height: 50px;
-	background-color:  tomato;
+	margin: 50px 10px 0px 10px;
+	font-size: 25px;
+	font-family: 'Montserrat', sans-serif;
 }
 
+
+.mytext-small {
+	font-size: 15px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.unicorn {
+	width: 200px;
+	height: 200px;
+    border-radius: 50%;
+    margin-bottom: -40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+@media (max-width: 768px) {
+    .myname {
+        font-size: 50px;
+    }
+
+    .mytext {
+        font-size: 20px;
+    }
+}   
+
+@media screen and ( max-height: 600px ) {
+    .unicorn {
+        visibility:hidden
+    }
+    .mytext-small {
+        visibility:hidden
+    }
+    .myname {
+        margin-top: 120px;
+    }
+}
+
+@media screen and ( max-height: 320px ) {
+    .myname {
+        font-size: 50px;
+    }
+    .mytext {
+        font-size: 20px;
+    }
+}
+
+
+/* Category and subcategory names */
+ 
 .category {
-	padding: 30px 0px 0px 0px;
+	padding: 40px 0px 0px 0px;
 	font-size: 50px;
 	font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .subcategory {
 	padding: 40px 10px 20px 10px;
-	font-size: 20;
+	font-size: 20px;
 	font-family: 'Montserrat', sans-serif;
+}
+
+/* SKILLS BLOCK */
+
+/* Containers for progress circles */
+
+.skills {
+    margin: 0px;
 }
 
 .progress_container {
 	padding-bottom: 10px;
 }
+
+
+/* Elements of the Other section */
+
+.myelements {
+	display: flex;
+	-webkit-flex-direction: row;
+    flex-direction: row;
+	flex-wrap: wrap;
+    justify-content: center;
+}
+
+.myelem {
+	border-radius: 5px;
+    background: tomato;
+	padding: 2px 10px;
+	margin: 5px;
+	flex-shrink: 0;
+
+}
+
+/* WORK CATEGORY */
+
+.work_title {
+	padding-bottom: 40px;
+	padding-top: 70px;
+}
+
+.work_main {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.work h4 {
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+.work h5 {
+	font-size: 15px;
+	font-family: 'Montserrat', sans-serif;
+	color: #97999c;
+}
+
+/* timeline drawn inside work_main container */
+.line {
+  background-image: 
+	repeating-linear-gradient(-45deg, 
+		tomato, tomato 10px, 
+		#fffde8 10px, #fffde8 20px); 
+    width: 15px;
+ 	left: 50%;
+	height: 100%;
+    right: 0;
+    top: 0;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+
+/* Flex container with all work elements - square work fields, dots, horizontal lines */
+.work_flex {
+	display: flex;
+}
+
+.work_flex_right {
+	margin-top: -50px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.work_flex_left {
+	margin-top: -50px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+
+/* Outer flex container to arrange work text*/
+.work_container {
+	display: flex;
+	width: 43%;
+	margin: 0px;
+}
+
+.work_container_left {
+	padding: 0px 0px 0px 10px;
+}
+
+.work_container_right {
+	padding: 0px 10px 0px 0px;
+}
+
+/* Container inside work_container that contains text */
+.work {
+	background-color: #fffde8;
+	border: 5px solid tomato;
+	border-radius: 5px;
+	color: #2f3439;
+	margin: 0px;
+	padding: 5px;
+}
+
+
+
+/* Flex container that contains line*/
+.line_container {
+  display: flex; 
+  width: 14%;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+/* circles on the timeline */
+.work_circle {
+	width: 50px;
+	height: 50px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    background: tomato;
+    position: absolute;
+	left: 50%;
+    transform: translateX(-50%);
+	align-self: center;
+	text-align: center;
+	line-height: 50px;
+	font-size: 25px;
+	font-family: 'Impact', sans-serif;
+	color: #2f3439;
+}
+
+.work-circle:hover {
+    background: white;
+}
+
+/* line from circle to work container */
+
+.work_line_left {
+	width: 50%;
+	height: 5px;
+    background: tomato;
+    position: absolute;
+	align-self: center;
+	z-index: -1;
+}
+
+.work_line_right {
+	width: 50%;
+	height: 5px;
+    background: tomato;
+    position: absolute;
+	align-self: center;
+	left: 50%;
+	z-index: -1;
+}
+
+
+@media (max-width: 768px) {
+ .line_container {
+  width: 14%;
+  }   
+
+.line {
+ 	left: 7%;
+}
+
+	.work_flex_right {
+		margin-top: 20px;
+	}
+
+	.work_flex_left {
+		margin-top: 20px;
+	}
+	.work_container{
+		width: 86%;
+		}
+		.work_container_left {
+	order: 99;
+	padding: 0px 10px 0px 0px;
+	}
+    .work_right {
+	margin: 0px 30px 40px 0px;
+	}
+
+	.work_line_left {
+		left: 50%;
+	}
+}
+
+
+
+/* Styles for svg circles/arcs */
+
+circle {
+	 fill: #fffde8;
+}
+
+path {
+  fill: tomato;
+}
+
+text {
+	 font-family: 'Noto Sans', sans-serif ;
+	 font-size  : 16;
+	 fill       :#2f3439 ;
+	 stroke     :#2f3439 ;
+	 stroke-width: 0.5px;
+}
+
+svg.pie {
+  width: 170px;
+  height: 170px;
+}
+
+
+
+/* LATEST COURSES */
+
+.courses_flex {
+    display: flex;
+    margin: 20px 0px;
+}
+
+.courses_flex:hover {
+    background-color: #525a63;
+}
+
+
+.date_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Impact', sans-serif;
+    font-size  : 25px;
+    color: #828588;
+    margin: 0px 20px;
+    width: 10%;
+    align-items: center;
+}
+
+.date_container p {
+    margin: 0px;
+}
+
+.logo_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.course_container {
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.course_click {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.git_container {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    background:  #fffde8 !important;
+    color: #2f3439  !important;
+}
+
+.btn:hover {
+    background: tomato !important;
+    color: #fffde8  !important;
+}
+
+.course_logo {
+	width: 50px;
+	height: 50px;
+    margin: 0px 20px;
+}
+
+.git_logo {
+	width: 30px;
+	height: 30px;
+    margin: 0px 5px 0px 0px;
+}
+
+.course_text {
+    display: flex;
+    margin: 0px 20px;
+    font-size: 15px;
+    width: 100%;
+}
+
+.udacity_logo {
+    border-radius: 50%;
+}
+
+.course_text a {
+    display: block;
+    width: 100%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.course_text a:visited {
+	color:#fffde8; 
+	background-color:transparent; 
+	text-decoration:none;
+}
+
+.course_text a:hover {
+	color:tomato; 
+	background-color:transparent; 
+	text-decoration:none;
+}
+
+
+@media (max-width: 768px) {
+
+    .git_container span {
+    display: none;
+    }
+
+    .date_container {
+        flex-direction: column;
+    }
+
+    .git_logo {
+        margin: 0px 0px 0px 0px;
+    }
+
+}
+
+/* CONTACTS */
+
+.contacts_title {
+	padding-bottom: 40px;
+	padding-top: 50px;
+}
+
+
+.contacts_flex {
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact_container {
+    display: flex;
+    margin: 10px 20px;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    margin: 10px 20px;
+    align-items: center;
+ 	border-radius: 5px;
+	padding: 2px 10px;
+	margin: 5px;
+    background-color: #fffde8;
+    color: #2f3439;
+}
+
+.fa {
+    color: tomato;
+}
+
+.contact a {
+	color:#2f3439; 
+	font-family: 'Montserrat', sans-serif;
+	background-color:transparent; 
+	text-decoration:none;
+    margin-left: 10px;
+}
+
+.contact a:visited {
+	color:#2f3439; 
+	background-color:transparent; 
+	text-decoration:none;
+}
+
+.contact a:hover {
+	color:tomato; 
+	background-color:transparent; 
+	text-decoration:none;
+}
+
+
