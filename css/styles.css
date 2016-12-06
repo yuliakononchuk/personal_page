@@ -412,7 +412,7 @@ svg.pie {
 	font-family: 'Montserrat', sans-serif;
 }
 
-.course_text a:visited {
+.course_text a:focus, .course_text a:visited {
 	color:#fffde8; 
 	background-color:transparent; 
 	text-decoration:none;
@@ -476,18 +476,12 @@ svg.pie {
     color: tomato;
 }
 
-.contact a {
+.contact a, .contact a:visited, .contact a:focus, .contact a:active {
 	color:#2f3439; 
 	font-family: 'Montserrat', sans-serif;
 	background-color:transparent; 
 	text-decoration:none;
     margin-left: 10px;
-}
-
-.contact a:visited {
-	color:#2f3439; 
-	background-color:transparent; 
-	text-decoration:none;
 }
 
 .contact a:hover {
