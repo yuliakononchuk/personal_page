@@ -10,13 +10,12 @@
 
 <body>
 
-    
-	  <div class="main text-center">
-	  	  <div class="myname"> Hi, I'm Yulia </div>
-		  <div class= "mytext">I analyze big data and build web dashboards during the day - and learn web development at night. This is my very first web page, and if you have anything to tell about it - please, feel free to contact me. </div>
+	  <div class="name_flex text-center">
+	  	  <div class="name"> Hi, I'm Yulia </div>
+          <div class= "name_desc">I analyze big data and build web dashboards during the day - and learn web development at night. Feel free to <a href="mailto:kononch.yulia@gmail.com">contact</a> me if you'd like to have a chat. </div>
           <div class='unicorn_container'>
-          <img src="images/unicorn.gif" class='unicorn'>
-		  <div class= "mytext-small"> (yes, and I love unicorns) </div>
+              <img src="images/unicorn.gif" class='unicorn'>
+              <div class= "name_desc_small"> (also, I love unicorns) </div>
           </div>
 	  </div>
 
@@ -24,7 +23,6 @@
           <div class="category">Technical stuff</div>
           <div class="subcategory col-xs-12">Frontend</div>
           <div class="progress_container col-sm-2 col-xs-4 col-sm-offset-1 text-center">
-           
               <svg width="110" height="110">
               <!-- center (x and y) and radius  -->
                 <!-- M50,50 - start path in the center of the circle -->
@@ -32,17 +30,9 @@
                 <!-- A50,50 - draw arc from current location with radius = circle radius  -->
                 <!-- 1 0 1 z - curvature, direction, and terminal of the arc  -->
                 <!--angle(in Radians) = (angleInDegrees-90) * PI / 180.0;
-                    96,83 - where the arc should end
+                    8,72 - where the arc should end
                         x = 55 + 50 * cos(angle)
                         y = 55 + 50 * sin(angle)  
-                87,17 = 40 deg
-                98,30 = 40 deg
-                105,55 = 90 deg
-                98,80 = 120 deg
-                38,102 = 200 deg
-                8,72 = 250 deg
-                12,30 = 250 deg
-
                 -->
                   <path d="M55,55 L55,5 A50,50 1 1 1 8,72 z"></path>
                   <circle cx="55" cy="55" r="30"></circle>
@@ -51,117 +41,111 @@
             </div>
 
             <div class="progress_container col-sm-2 col-xs-4 text-center">
-                 <svg width="110" height="110">
-                      <path d="M55,55 L55,5 A50,50 1 1 1 38,102 z"></path>
-                      <circle cx="55" cy="55" r="30"></circle>
-                      <text x="50%" y="54.5%" text-anchor="middle">CSS</text>
+                <svg width="110" height="110">
+                  <path d="M55,55 L55,5 A50,50 1 1 1 38,102 z"></path>
+                  <circle cx="55" cy="55" r="30"></circle>
+                  <text x="50%" y="54.5%" text-anchor="middle">CSS</text>
                 </svg>
             </div>
 
             <div class="progress_container col-sm-2 col-xs-4 text-center">
-                <svg width="110" height="110">
-                      <path d="M55,55 L55,5 A50,50 1 0 1 98,30 z"></path>
-                      <circle cx="55" cy="55" r="30"></circle>
-                      <text x="50%" y="54.5%" text-anchor="middle">JS</text>
-                </svg>
+               <svg width="110" height="110">
+                  <path d="M55,55 L55,5 A50,50 1 0 1 98,30 z"></path>
+                  <circle cx="55" cy="55" r="30"></circle>
+                  <text x="50%" y="54.5%" text-anchor="middle">JS</text>
+               </svg>
             </div>
 
             <div class="progress_container col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-2 text-center">
                <svg width="110" height="110">
-                      <path d="M55,55 L55,5 A50,50 1 0 1 98,80 z"></path>
-                      <circle cx="55" cy="55" r="30"></circle>
-                      <text x="50%" y="54.5%" text-anchor="middle">SASS</text>
+                  <path d="M55,55 L55,5 A50,50 1 0 1 105,55 z"></path>
+                  <circle cx="55" cy="55" r="30"></circle>
+                  <text x="50%" y="54.5%" text-anchor="middle">SASS</text>
               </svg>
            </div>
 
             <div class="progress_container col-sm-2 col-xs-4 text-center">
               <svg width="110" height="110">
-                      <path d="M55,55 L55,5 A50,50 1 1 1 12,30 z"></path>
-                      <circle cx="55" cy="55" r="30"></circle>
-                      <text x="50%" y="54.5%" text-anchor="middle">B.</text>
+                  <path d="M55,55 L55,5 A50,50 1 1 1 12,30 z"></path>
+                  <circle cx="55" cy="55" r="30"></circle>
+                  <text x="50%" y="54.5%" text-anchor="middle">B.</text>
               </svg>
            </div>
-              <div class="subcategory col-xs-12 text-center">
-                  Backend / Data
-              </div>
-              
-              <div class="progress_container col-sm-2 col-xs-4 text-center pagination-centered">
-                    <svg width="110" height="110">
-                      <path d="M55,55 L55,5 A50,50 1 1 1 12,30 z"></path>
-                          <circle cx="55" cy="55" r="30"></circle>
-                          <text x="50%" y="54.5%" text-anchor="middle">Hive</text>
-                  </svg>
-              </div>
           
-
-    		<div class="progress_container col-sm-2 col-xs-4 text-center">
-	          <svg width="110" height="110">
-                      <path d="M55,55 L55,5 A50,50 1 1 1 5,55 z"></path>
-                      <circle cx="55" cy="55" r="30"></circle>
-                      <text x="50%" y="54.5%" text-anchor="middle">SQL</text>
-              </svg>			
-    	    </div>
+           <div class="subcategory col-xs-12 text-center">
+              Backend / Data
+           </div>
+          
+           <div class="progress_container col-sm-2 col-xs-4 text-center pagination-centered">
+              <svg width="110" height="110">
+                  <path d="M55,55 L55,5 A50,50 1 1 1 12,30 z"></path>
+                  <circle cx="55" cy="55" r="30"></circle>
+                  <text x="50%" y="54.5%" text-anchor="middle">Hive</text>
+              </svg>
+           </div>
       
+          <div class="progress_container col-sm-2 col-xs-4 text-center">
+            <svg width="110" height="110">
+                <path d="M55,55 L55,5 A50,50 1 1 1 5,55 z"></path>
+                <circle cx="55" cy="55" r="30"></circle>
+                <text x="50%" y="54.5%" text-anchor="middle">SQL</text>
+            </svg>			
+         </div>
+  
+        <div class="progress_container col-sm-2 col-xs-4 text-center">
+          <svg width="110" height="110">
+              <path d="M55,55 L55,5 A50,50 1 1 1 8,72 z"></path>
+              <circle cx="55" cy="55" r="30"></circle>
+              <text x="50%" y="54.5%" text-anchor="middle">R</text>
+          </svg>			
+       </div>
+  
+        <div class="progress_container col-sm-2 col-xs-4 text-center">
+          <svg width="110" height="110">
+              <path d="M55,55 L55,5 A50,50 1 1 1 8,72 z"></path>
+              <circle cx="55" cy="55" r="30"></circle>
+              <text x="50%" y="54.5%" text-anchor="middle">Oozie</text>
+          </svg>			
+        </div>
+  
+        <div class="progress_container col-sm-2 col-xs-4 text-center">
+          <svg width="110" height="110">
+               <path d="M55,55 L55,5 A50,50 1 0 1 98,30 z"></path>
+               <circle cx="55" cy="55" r="30"></circle>
+               <text x="50%" y="54.5%" text-anchor="middle">Python</text>
+          </svg>			
+       </div>
 
-    		<div class="progress_container col-sm-2 col-xs-4 text-center">
- 	          <svg width="110" height="110">
-                  <path d="M55,55 L55,5 A50,50 1 1 1 8,72 z"></path>
-                      <circle cx="55" cy="55" r="30"></circle>
-                      <text x="50%" y="54.5%" text-anchor="middle">R</text>
-              </svg>			
-    	   </div>
-      
-
-    		<div class="progress_container col-sm-2 col-xs-4 text-center">
-  	          <svg width="110" height="110">
-                  <path d="M55,55 L55,5 A50,50 1 1 1 8,72 z"></path>
-                      <circle cx="55" cy="55" r="30"></circle>
-                      <text x="50%" y="54.5%" text-anchor="middle">Oozie</text>
-              </svg>			
-   	        </div>
-      
-
-    		<div class="progress_container col-sm-2 col-xs-4 text-center">
-   	          <svg width="110" height="110">
-                      <path d="M55,55 L55,5 A50,50 1 0 1 98,30 z"></path>
-                      <circle cx="55" cy="55" r="30"></circle>
-                      <text x="50%" y="54.5%" text-anchor="middle">Python</text>
-              </svg>			
-     	   </div>
-      
-
-    		<div class="progress_container col-sm-2 col-xs-4 text-center">
-    	          <svg width="110" height="110">
-                      <path d="M55,55 L55,5 A50,50 1 0 1 105,55 z"></path>
-                      <circle cx="55" cy="55" r="30"></circle>
-                      <text x="50%" y="54.5%" text-anchor="middle">Perl</text>
-              </svg>			
- 	        </div>
-    		
-            <div class="subcategory col-xs-12 text-center">
-              Other
-            </div>
-            
-            <div class='col-xs-12 text-center myflex myelements'>
-            <div class = 'myelem'>c3.js</div>
-            <div class = 'myelem'>d3.js</div>
-            <div class = 'myelem'>git</div>
-            <div class = 'myelem'>vim</div>
-            <div class = 'myelem'>tmux</div>
-            <div class = 'myelem'>sublime text</div>
-            <div class = 'myelem'>command line</div>
-            <div class = 'myelem'>agile work approach</div>
-            <div class = 'myelem'>prototyping (eg balzamiq)</div>
-            <div class = 'myelem'>project and stakeholder management</div>
-            </div>
+        <div class="progress_container col-sm-2 col-xs-4 text-center">
+           <svg width="110" height="110">
+               <path d="M55,55 L55,5 A50,50 1 0 1 105,55 z"></path>
+               <circle cx="55" cy="55" r="30"></circle>
+               <text x="50%" y="54.5%" text-anchor="middle">Perl</text>
+           </svg>			
+        </div>
+        
+        <div class="subcategory col-xs-12 text-center">Other</div>
+        
+        <div class='col-xs-12 text-center myflex other_skills_container'>
+            <div class = 'other_skill'>c3.js</div>
+            <div class = 'other_skill'>d3.js</div>
+            <div class = 'other_skill'>git</div>
+            <div class = 'other_skill'>vim</div>
+            <div class = 'other_skill'>tmux</div>
+            <div class = 'other_skill'>command line</div>
+            <div class = 'other_skill'>agile</div>
+            <div class = 'other_skill'>scrum</div>
+            <div class = 'other_skill'>prototyping (eg balzamiq)</div>
+            <div class = 'other_skill'>testing and debugging</div>
+            <div class = 'other_skill'>project maintenance</div>
+            <div class = 'other_skill'>project and stakeholder management</div>
+        </div>
       </div>
-      
-     
-	  </div>
-    
-	  
+
+
+
       <div class="category work_title text-center">Work &amp; Study</div>
-     
+      
       <div class ='work_main'>
 
           <div class='line'></div>
@@ -173,9 +157,9 @@
                     <h5>Booking.com</h5>
                     <ul class='text-left'>
                         <li>Building custom strategic dashboards for several tracks in the company</li>
-                        <li>Big data analysys and deep dives, 
-                            visualization and communication of results to stakeholders
-                        </li>
+                        <li>This includes discussing and framing the idea, prototyping, working in small iterations to build up a dashboard, (user) testing and debugging, and maintaining the final version</li>
+                        <li>Big data analysys and deep dives, conceptualization and development of new KPI's,
+                            visualization and communication of results to stakeholders</li>
                         <li>Teaching MySQL course and training new employees</li>
                         <li>Working on introducing common data visualization system within company</li>
                     </ul>
@@ -261,13 +245,11 @@
                   <div class='work_line_left'></div>
                </div>
           </div>
-
       </div>
-      
 
  
-    <div class="category work_title text-center">Latest Courses</div>
-	
+    <div class="category course_title text-center">Latest Courses</div>
+
           <div class="courses_flex">
                 <div class = 'date_container'>
                     <p>Sep&nbsp&nbsp</p>
@@ -284,16 +266,14 @@
                     </div>
                 </div>
                 <div class = 'git_container'>
-                    <a href="https://yuliakononchuk.github.io/module5-solution/"
-                         target="_blank" type="button" class="btn btn-xs" role="button">
-                    <img src="images/gh.svg" alt="github_logo" class='git_logo'>
-                    <span>see my solution</span>
+                    <a href="https://yuliakononchuk.github.io/module5-solution/" target="_blank" type="button" class="btn btn-xs" role="button">
+                        <img src="images/gh.svg" alt="github_logo" class='git_logo'>
+                        <span>see my solution</span>
                     </a>
                 </div>
           </div>
 
-	
-    <div class="courses_flex">
+          <div class="courses_flex">
                 <div class = 'date_container'>
                     <p>Oct&nbsp&nbsp</p>
                     <p>'16</p>
@@ -309,10 +289,9 @@
                     </div>
                 </div>
                 <div class = 'git_container'>
-                     <a href="https://yuliakononchuk.github.io/udacity_javascript_project/"
-                         target="_blank" type="button" class="btn btn-xs" role="button">
-                    <img src="images/gh.svg" alt="github_logo" class='git_logo'>
-                    <span>see my solution</span>
+                     <a href="https://yuliakononchuk.github.io/udacity_javascript_project/" target="_blank" type="button" class="btn btn-xs" role="button">
+                        <img src="images/gh.svg" alt="github_logo" class='git_logo'>
+                        <span>see my solution</span>
                     </a>
                 </div>
           </div>
@@ -334,10 +313,9 @@
                     </div>
                 </div>
                 <div class = 'git_container'>
-                      <a href="https://yuliakononchuk.github.io/udacity_javascript_project/"
-                         target="_blank" type="button" class="btn btn-xs" role="button">
-                    <img src="images/gh.svg" alt="github_logo" class='git_logo'>
-                    <span>see my solution</span>
+                    <a href="https://yuliakononchuk.github.io/udacity_javascript_project/" target="_blank" type="button" class="btn btn-xs" role="button">
+                        <img src="images/gh.svg" alt="github_logo" class='git_logo'>
+                        <span>see my solution</span>
                     </a>
                 </div>
           </div>
@@ -352,17 +330,16 @@
                     <img src="images/lynda.png" alt="lynda_logo" class='course_logo'>
                 </div>
                 <div class = 'course_container'>
-                        <div class='course_text'>
-                    <a href='https://www.lynda.com/CSS-tutorials/CSS-LESS-SASS/107921-2.html' target="_blank">
-                        CSS with LESS and Sass
-                    </a>
-                        </div>
+                    <div class='course_text'>
+                        <a href='https://www.lynda.com/CSS-tutorials/CSS-LESS-SASS/107921-2.html' target="_blank">
+                            CSS with LESS and Sass
+                        </a>
+                    </div>
                 </div>
                 <div class = 'git_container'>
-                       <a href="https://yuliakononchuk.github.io/udacity_javascript_project/"
-                         target="_blank" type="button" class="btn btn-xs" role="button">
-                    <img src="images/gh.svg" alt="github_logo" class='git_logo'>
-                    <span>see my solution</span>
+                    <a href="https://yuliakononchuk.github.io/udacity_javascript_project/" target="_blank" type="button" class="btn btn-xs" role="button">
+                        <img src="images/gh.svg" alt="github_logo" class='git_logo'>
+                        <span>see my solution</span>
                     </a>
                </div>
       </div>
