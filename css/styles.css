@@ -8,7 +8,6 @@ body {
 
 /* FIRST BLOCK - INTRODUCTION */
 
-
 .name_flex {
 	height: 100vh;
 	background-color: #ff6347;
@@ -242,7 +241,8 @@ body {
 	left: 50%;
     transform: translateX(-50%);
 	align-self: center;
-	text-align: center;
+	-webkit-align-self: center;
+    text-align: center;
 	line-height: 50px;
 	font-size: 25px;
 	font-family: 'Impact', sans-serif;
@@ -261,7 +261,9 @@ body {
     background: #ff6347;
     position: absolute;
 	align-self: center;
-	z-index: -1;
+	-webkit-align-self: center;
+    margin: auto;
+    z-index: -1;
 }
 
 .work_line_right {
@@ -270,7 +272,8 @@ body {
     background: #ff6347;
     position: absolute;
 	align-self: center;
-	left: 50%;
+	-webkit-align-self: center;
+    left: 50%;
 	z-index: -1;
 }
 
@@ -337,6 +340,7 @@ svg.pie {
 .courses_flex {
     display: flex;
     margin: 20px 0px;
+    justify-content: left;
 }
 
 .courses_flex:hover {
