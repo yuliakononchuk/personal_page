@@ -200,6 +200,7 @@ body {
 	display: flex;
 	width: 43%;
 	margin: 0px;
+    z-index: 20;
 }
 
 .work_container_left {
@@ -232,21 +233,20 @@ body {
 
 /* circles on the timeline */
 .work_circle {
-	width: 50px;
+    width: 50px;
 	height: 50px;
-    -webkit-border-radius: 25px;
     border-radius: 25px;
+    -webkit-border-radius: 25px;
     background: #ff6347;
-    position: absolute;
-	left: 50%;
-    transform: translateX(-50%);
 	align-self: center;
 	-webkit-align-self: center;
+    margin: auto;
     text-align: center;
 	line-height: 50px;
 	font-size: 25px;
 	font-family: 'Impact', sans-serif;
 	color: #2f3439;
+    z-index: 10;
 }
 
 .work-circle:hover {
@@ -255,26 +255,21 @@ body {
 
 /* line from circle to work container */
 
-.work_line_left {
-	width: 50%;
+.work_line_left, .work_line_right {
+	width: 150px;
 	height: 5px;
     background: #ff6347;
-    position: absolute;
 	align-self: center;
 	-webkit-align-self: center;
-    margin: auto;
-    z-index: -1;
+    margin-top: -25px;
+}
+
+.work_line_left {
+    margin-left: -100px;
 }
 
 .work_line_right {
-	width: 50%;
-	height: 5px;
-    background: #ff6347;
-    position: absolute;
-	align-self: center;
-	-webkit-align-self: center;
-    left: 50%;
-	z-index: -1;
+    margin-left: auto;
 }
 
 @media (max-width: 768px) {
@@ -305,7 +300,7 @@ body {
 	}
 
 	.work_line_left {
-		left: 50%;
+    margin-left: auto;
 	}
 }
 
