@@ -194,7 +194,6 @@ body {
 	justify-content: flex-start;
 }
 
-
 /* Outer flex container to arrange work text*/
 .work_container {
 	display: flex;
@@ -302,6 +301,7 @@ body {
 	.work_line_left {
     margin-left: auto;
 	}
+    .
 }
 
 
@@ -423,7 +423,7 @@ svg.pie {
 	font-family: 'Montserrat', sans-serif;
 }
 
-.course_text a:focus, .course_text a:visited {
+.course_text a:focus, .course_text a:visited, .course_text a:active  {
 	color:#fffde8; 
 	background-color:transparent; 
 	text-decoration:none;
@@ -438,7 +438,7 @@ svg.pie {
 
 @media (max-width: 768px) {
 
-    .git_container span {
+    .git_container, .date_container, .contact_text {
     display: none;
     }
 
@@ -473,7 +473,7 @@ svg.pie {
 
 .contact {
     display: flex;
-    margin: 10px 20px;
+    margin: 10px 10px;
     align-items: center;
  	border-radius: 5px;
 	padding: 2px 10px;
@@ -491,7 +491,6 @@ svg.pie {
 	font-family: 'Montserrat', sans-serif;
 	background-color:transparent; 
 	text-decoration:none;
-    margin-left: 10px;
 }
 
 .contact a:hover {
@@ -500,4 +499,7 @@ svg.pie {
 	text-decoration:none;
 }
 
-
+@media screen and (max-width: 768px) {
+    .contacts_flex{
+        margin-top: -30px
+    }
