@@ -32,17 +32,11 @@ body {
 
 /* contact link in description */
 
-.name_desc a, .name_desc a:visited, .name_desc a:focus, .name_desc a:active {
+.name_desc a, .name_desc a:visited, .name_desc a:focus, .name_desc a:active .name_desc a:hover{
 	color:#fffde8; 
 	font-family: 'Montserrat', sans-serif;
 	background-color:transparent; 
 	text-decoration:none;
-}
-
-.name_desc a:hover {
-	color:#fffde8; 
-	background-color:transparent; 
-	text-decoration:underline;
 }
 
 .name_desc_small {
@@ -271,7 +265,7 @@ body {
     margin-left: auto;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     
     .line_container {
       width: 14%;
@@ -301,9 +295,13 @@ body {
 	.work_line_left {
     margin-left: auto;
 	}
-    .
 }
 
+@media screen and (max-width: 450px) {
+ .work_circle {
+    display: none;
+    }
+}
 
 /* Styles for svg circles/arcs */
 
@@ -436,20 +434,22 @@ svg.pie {
 }
 
 
-@media (max-width: 768px) {
-
-    .git_container, .date_container, .contact_text {
-    display: none;
-    }
+@media screen and (max-width: 450px) {
 
     .date_container {
-        flex-direction: column;
+        display: none;
     }
 
+}
+
+@media screen and (max-width: 768px) {
     .git_logo {
         margin: 0px 0px 0px 0px;
     }
+    .git_logo+span{
+        display: none;
 
+    }
 }
 
 /* CONTACTS CATEGORY*/
@@ -466,24 +466,25 @@ svg.pie {
 }
 
 .contact_container {
-    display: flex;
-    margin: 10px 20px;
-    align-items: center;
+    margin: 10px 20px;    
 }
 
 .contact {
-    display: flex;
     margin: 10px 10px;
-    align-items: center;
  	border-radius: 5px;
-	padding: 2px 10px;
+	padding: 2px 10px 2px 0px;
 	margin: 5px;
     background-color: #fffde8;
     color: #2f3439;
 }
 
+.contact a {
+    display: flex;
+    align-items: center
+}
 .fa {
     color: #ff6347;
+    margin: 0px 10px 0px ;
 }
 
 .contact a, .contact a:visited, .contact a:focus, .contact a:active {
@@ -503,3 +504,5 @@ svg.pie {
     .contacts_flex{
         margin-top: -30px
     }
+}
+
