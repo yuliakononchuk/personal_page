@@ -420,13 +420,13 @@ svg.pie {
     width: 100%;
 }
 
-.course_text a:focus, .course_text a:visited, .course_text a:active  {
+.course_text a:link, .course_text a:focus, .course_text a:visited, .course_text a:hover {
 	color:#fffde8; 
 	background-color:transparent; 
 	text-decoration:none;
 }
 
-.course_text a:hover {
+.course_text a:active {
 	color:#ff6347; 
 	background-color:transparent; 
 	text-decoration:none;
@@ -434,11 +434,9 @@ svg.pie {
 
 
 @media screen and (max-width: 450px) {
-
     .date_container {
         display: none;
     }
-
 }
 
 @media screen and (max-width: 768px) {
