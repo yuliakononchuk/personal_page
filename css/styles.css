@@ -149,6 +149,7 @@ body {
 
 .work h4 {
 	font-size: 3rem;
+    font-weight: bold;
 }
 
 .work h5 {
@@ -239,7 +240,7 @@ body {
     text-align: center;
 	line-height: 50px;
 	font-size: 25px;
-	font-family: 'Impact', sans-serif;
+	font-family: Impact, Roboto,  sans-serif;
 	color: #2f3439;
     z-index: 10;
 }
