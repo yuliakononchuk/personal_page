@@ -3,7 +3,33 @@
 body {
   background-color: #2f3439;
   color: #fffde8;
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* manipulate global size on different screen sizes */
+
+@media (min-width: 769px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 451px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width:450px) and (min-width:300px){
+    html {
+        font-size: 40%;
+    }
+}
+
+@media (max-width:300px) {
+    html {
+        font-size: 30%;
+    }
 }
 
 /* FIRST BLOCK - INTRODUCTION */
@@ -20,28 +46,25 @@ body {
 
 .name {
 	margin-top: 70px;
-    font-size: 70px;
+    font-size: 7rem;
 	font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .name_desc {
 	margin: 50px 10px 0px 10px;
-	font-size: 25px;
-	font-family: 'Montserrat', sans-serif;
+	font-size: 2.5rem;
 }
 
 /* contact link in description */
 
 .name_desc a, .name_desc a:visited, .name_desc a:focus, .name_desc a:active .name_desc a:hover{
 	color:#fffde8; 
-	font-family: 'Montserrat', sans-serif;
 	background-color:transparent; 
 	text-decoration:none;
 }
 
 .name_desc_small {
-	font-size: 15px;
-	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5rem;
 }
 
 /* unicorn picture! */
@@ -55,17 +78,7 @@ body {
 	margin-right: auto;
 }
 
-
-@media (max-width: 768px) {
-    .name {
-        font-size: 50px;
-    }
-
-    .name_desc {
-        font-size: 20px;
-    }
-}
-
+/* Hide unicorn for small heights */
 @media screen and ( max-height: 600px ) {
     .unicorn {
         visibility:hidden;
@@ -78,28 +91,18 @@ body {
     }
 }
 
-@media screen and ( max-height: 320px ) {
-    .name {
-        font-size: 50px;
-    }
-    .name_desc {
-        font-size: 20px;
-    }
-}
 
-
-/* Category and subcategory names */
+/* GLOBAL: CATEGORY AND SUBCATEGORY NAMES  */
  
 .category {
-	font-size: 50px;
+	font-size: 5rem;
 	font-family: 'Montserrat Alternates', sans-serif;
 	padding: 100px 10px 0px 10px;
 }
 
 .subcategory {
 	padding: 40px 10px 20px 10px;
-	font-size: 20px;
-	font-family: 'Montserrat', sans-serif;
+	font-size: 3rem;
 }
 
 /* SKILLS BLOCK */
@@ -132,7 +135,7 @@ body {
 	flex-shrink: 0;
 }
 
-/* WORK CATEGORY */
+/* WORK BLOCK */
 
 .work_title {
 	padding-bottom: 40px;
@@ -145,14 +148,16 @@ body {
 }
 
 .work h4 {
-	font-size: 20px;
-	font-family: 'Montserrat', sans-serif;
+	font-size: 3rem;
 }
 
 .work h5 {
-	font-size: 15px;
-	font-family: 'Montserrat', sans-serif;
+	font-size: 2rem;
 	color: #97999c;
+}
+
+.work ul {
+    font-family: 'Noto Sans', sans-serif ;
 }
 
 /* timeline drawn inside work_main container */
@@ -195,7 +200,7 @@ body {
 	margin: 0px;
     z-index: 20;
 }
-
+    
 .work_container_left {
 	padding: 0px 0px 0px 10px;
 }
@@ -214,7 +219,6 @@ body {
 	padding: 5px;
 }
 
-
 /* Flex container that contains line*/
 .line_container {
   display: flex; 
@@ -224,12 +228,10 @@ body {
   position: relative;
 }
 
-/* circles on the timeline */
+/* Circles on the timeline */
 .work_circle {
     width: 50px;
 	height: 50px;
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
     background: #ff6347;
 	align-self: center;
 	-webkit-align-self: center;
@@ -242,14 +244,10 @@ body {
     z-index: 10;
 }
 
-.work-circle:hover {
-    background: white;
-}
-
 /* line from circle to work container */
 
 .work_line_left, .work_line_right {
-	width: 150px;
+	width: 200%;
 	height: 5px;
     background: #ff6347;
 	align-self: center;
@@ -258,13 +256,14 @@ body {
 }
 
 .work_line_left {
-    margin-left: -100px;
+    margin-left: -80px;
 }
 
 .work_line_right {
-    margin-left: auto;
+    margin-left: 25px;
 }
 
+/* move work containers to one side for small screens */
 @media screen and (max-width: 768px) {
     
     .line_container {
@@ -285,6 +284,7 @@ body {
 
 	.work_container_left {
 	    order: 99;
+        -webkit-order: 99;
 	    padding: 0px 10px 0px 0px;
 	}
     
@@ -297,16 +297,18 @@ body {
 	}
 }
 
-@media screen and (max-width: 450px) {
- .work_circle {
-    display: none;
+
+@media screen and (min-width: 360px) {
+    .work_circle  {
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
     }
 }
 
 /* Styles for svg circles/arcs */
 
 circle {
-	 fill: #fffde8;
+  fill: #fffde8;
 }
 
 path {
@@ -314,11 +316,11 @@ path {
 }
 
 text {
-	 font-family: 'Noto Sans', sans-serif ;
-	 font-size  : 16;
-	 fill       :#2f3439 ;
-	 stroke     :#2f3439 ;
-	 stroke-width: 0.5px;
+  font-family: 'Noto Sans', sans-serif ;
+  font-size  : 16;
+  fill       :#2f3439 ;
+  stroke     :#2f3439 ;
+  stroke-width: 0.5px;
 }
 
 svg.pie {
@@ -327,8 +329,7 @@ svg.pie {
 }
 
 
-
-/* LATEST COURSES */
+/* LATEST COURSES BLOCK */
 
 .courses_flex {
     display: flex;
@@ -340,13 +341,12 @@ svg.pie {
     background-color: #525a63;
 }
 
-
 .date_container {
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Impact', sans-serif;
-    font-size  : 25px;
+    font-size  : 2.5rem;
     color: #828588;
     margin: 0px 20px;
     width: 10%;
@@ -418,7 +418,6 @@ svg.pie {
 .course_text a {
     display: block;
     width: 100%;
-	font-family: 'Montserrat', sans-serif;
 }
 
 .course_text a:focus, .course_text a:visited, .course_text a:active  {
@@ -452,7 +451,7 @@ svg.pie {
     }
 }
 
-/* CONTACTS CATEGORY*/
+/* CONTACTS BLOCK*/
 
 .contacts_title {
 	padding-bottom: 40px;
@@ -489,7 +488,6 @@ svg.pie {
 
 .contact a, .contact a:visited, .contact a:focus, .contact a:active {
 	color:#2f3439; 
-	font-family: 'Montserrat', sans-serif;
 	background-color:transparent; 
 	text-decoration:none;
 }
